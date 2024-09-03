@@ -6,10 +6,6 @@ on:
   # Pushing commit to the master branch
   # push:
     # branches: master
-  schedule:
-    # Runs tests every day at 1am
-   - cron: '0 1 * * *'
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -64,7 +60,7 @@ jobs:
           # Required mail subject:
           subject: Daily Test Run Report
           # Required recipients' addresses:
-          to: mysms33@gmail.com,yoely211@gmail.com
+          to: qatester9462@gmail.com
           # Required sender full name (address can be skipped):
           from: Alpha Automation ${{github.run_id}} # <user@example.com>
           # Optional plain body:
